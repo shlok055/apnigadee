@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majuli Travel Plan</title>
+    <link rel="stylesheet" href="../style/sheet.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+               <a href="../../index.html"><img src="../../assets/apni.png" alt="Airbnb Logo"></a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Start your search">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="user-menu">
+                <button class="globe"><i class="fas fa-globe"></i></button>
+                <button class="user-profile">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-user-circle"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="listing-header">
+            <h1>Majuli Travel Plan</h1>
+            <div class="listing-meta">
+                <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                <span class="reviews">312 reviews</span>
+                <span class="location">Assam, India</span>
+            </div>
+        </section>
+
+        <section class="photo-gallery">
+            <div class="main-photo">
+                <img src="https://www.adotrip.com/public/images/city/master_images/5e4a2dedddfe5-Majuli_Attractions.jpg" alt="Majuli Island">
+            </div>
+            <div class="photo-grid">
+                <img src="https://www.adotrip.com/public/images/city/large_thumb/5c3dabab7a8ec-Majuli%20Place%20to%20visit.jpg" alt="Satras in Majuli">
+                <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/27/75/ed.jpg" alt="Cultural Dance">
+                <img src="https://live.staticflickr.com/2610/4174558153_c60a2df5f1_b.jpg" alt="Mask Making">
+                <img src="https://live.staticflickr.com/4207/34834427174_59a06c0510_b.jpg" alt="River View">
+            </div>
+        </section>
+
+        <section class="listing-details">
+            <div class="left-column">
+                <div class="host-info">
+                    <h2>Anini Itinerary</h2>
+                    <div class="itinerary-days">
+                        <div class="day-item">
+                            <h4 onclick="toggleDay('day1')">Day 1: Jorhat to Majuli ▼</h4>
+                            <p id="day1" class="day-details" style="display: none;">
+                                Morning:
+                                Arrive at Jorhat (nearest major town to Majuli).<br>
+                                Take the morning ferry from Nimati Ghat to Kamalabari Ghat (1-hour journey).<br>
+                                Check-in at your homestay or eco-resort.<br>
+                                <br>
+                                Afternoon:
+                                Visit Kamalabari Satra, one of the prominent Vaishnavite monasteries.<br>
+                                Experience the unique monastery culture and architecture.<br>
+                                <br>
+                                Evening:
+                                Watch the sunset by the Brahmaputra River.<br>
+                                Enjoy traditional Assamese dinner at your stay.
+                            </p>
+                        </div>
+
+                        <div class="day-item">
+                            <h4 onclick="toggleDay('day2')">Day 2: Exploring Satras ▼</h4>
+                            <p id="day2" class="day-details" style="display: none;">
+                                Morning:
+                                Visit Uttar Kamalabari Satra.<br>
+                                Watch morning prayer ceremonies and mask-making workshops.<br>
+                                Experience traditional Sattriya dance performances.<br>
+                                <br>
+                                Afternoon:
+                                Visit Auniati Satra, famous for its museum and artifacts.<br>
+                                Witness cultural performances and religious ceremonies.<br>
+                                <br>
+                                Evening:
+                                Cultural program at local community center.<br>
+                                Traditional dinner with local delicacies.
+                            </p>
+                        </div>
+
+                        <div class="day-item">
+                            <h4 onclick="toggleDay('day3')">Day 3: Local Culture & Crafts ▼</h4>
+                            <p id="day3" class="day-details" style="display: none;">
+                                Morning:
+                                Visit local Mishing tribal villages.<br>
+                                Learn about traditional weaving and textile making.<br>
+                                Experience local pottery making.<br>
+                                <br>
+                                Afternoon:
+                                Visit mask-making workshops in Samaguri Satra.<br>
+                                Learn about the ancient craft of mask making.<br>
+                                <br>
+                                Evening:
+                                Shopping for traditional handicrafts.<br>
+                                Cultural performance and dinner.
+                            </p>
+                        </div>
+
+                        <div class="day-item">
+                            <h4 onclick="toggleDay('day4')">Day 4: Nature & Departure ▼</h4>
+                            <p id="day4" class="day-details" style="display: none;">
+                                Morning:
+                                Birdwatching tour in wetlands.<br>
+                                Visit organic farming areas.<br>
+                                Last-minute shopping for souvenirs.<br>
+                                <br>
+                                Afternoon:
+                                Check-out and take the ferry back to Nimati Ghat.<br>
+                                Depart for Jorhat.<br>
+                                <br>
+                                Evening:
+                                Reach Jorhat for onward journey.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="amenities">
+                    <h3>We offers you:</h3>
+                    <ul>
+                        <li><i class="fas fa-bed"></i> Traditional Homestay Accommodation</li>
+                        <li><i class="fas fa-ferry"></i> Ferry Transfers</li>
+                        <li><i class="fas fa-bicycle"></i> Local Transportation</li>
+                        <li><i class="fas fa-utensils"></i> Traditional Assamese Meals</li>
+                        <li><i class="fas fa-mask"></i> Cultural Experiences</li>
+                        <li><i class="fas fa-camera"></i> Guided Satra Tours</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-column">
+                <div class="booking-card">
+                    <div class="price">
+                        <span class="amount">₹12,999</span> / per person
+                    </div>
+                    <form class="booking-form">
+                        <div class="date-picker">
+                            <div class="check-in">
+                                <label for="check-in">Check-in</label>
+                                <input type="date" id="check-in" name="check-in">
+                            </div>
+                            <div class="check-out">
+                                <label for="check-out">Check-out</label>
+                                <input type="date" id="check-out" name="check-out">
+                            </div>
+                        </div>
+                        <button type="button" class="reserve-button" onclick="location.href='https://wa.me/919706218186'">Inquire</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>ApniGADEE</h4>
+                <p>
+                   Explore the world with ease and excitement through our
+                   comprehensive travel platform. Your journey begins here, 
+                   where seamless planning meets unforgettable experiences.
+                </p>
+
+            </div>
+            <div class="footer-section">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Cabs</a></li>
+                    <li><a href="#">Destinations</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="#">9706218186/7099036358</a></li>
+                    <li><a href="#">apnigadeeofficial@gmail.com</a></li>
+                    <li><a href="#">Nikamul Chariali, Near Parua Bus Stand, Tezpur, Assam</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy;apnigadee. · Privacy · Terms · Sitemap</p>
+        </div>
+    </footer>
+    <script>
+        function toggleDay(dayId) {
+            const dayElement = document.getElementById(dayId);
+            const currentDisplay = dayElement.style.display;
+            dayElement.style.display = currentDisplay === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+
+</html>

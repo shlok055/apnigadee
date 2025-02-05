@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shillong Travel Plan</title>
+    <link rel="stylesheet" href="../style/sheet.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="../../index.html"><img src="../../assets/apni.png" alt="Airbnb Logo"></a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Start your search">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="user-menu">
+                <button class="globe"><i class="fas fa-globe"></i></button>
+                <button class="user-profile">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-user-circle"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="listing-header">
+            <h1>Shillong Travel Plan</h1>
+            <div class="listing-meta">
+                <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                <span class="reviews">428 reviews</span>
+                <span class="location">Meghalaya, India</span>
+            </div>
+        </section>
+
+        <section class="photo-gallery">
+            <div class="main-photo">
+                <img src="https://www.holidify.com/images/bgImages/SHILLONG.jpg" alt="Shillong Main Photo">
+            </div>
+            <div class="photo-grid">
+                <img src="https://th.bing.com/th/id/R.21feefd51381cf6317df34de8345d833?rik=FJTXB0gdVPH9NA&riu=http%3a%2f%2fwww.bontravelindia.com%2fwp-content%2fuploads%2f2022%2f08%2fUmiam-Lake-Shillong-Meghalaya.jpg&ehk=Y%2f1IrAbTAsclXe%2fAPsflQpg2mox9WPXOSuQ%2fKqr1RFU%3d&risl=&pid=ImgRaw&r=0"
+                    alt="Umiam Lake">
+                <img src="https://timesofindia.indiatimes.com/thumb/51728579.cms?width=423&height=281"
+                    alt="Elephant Falls">
+                <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2020/03/shillong.jpg"
+                    alt="Living Root Bridge">
+                <img src="https://travelnthrill.com/wp-content/uploads/2020/01/Land-of-Shillong.jpg"
+                    alt="Shillong Peak">
+            </div>
+        </section>
+
+        <section class="listing-details">
+            <div class="left-column">
+                <div class="host-info">
+                    <h2>Shillong Itinerary</h2>
+                    <div class="itinerary-days">
+                        <div class="day-item">
+                            <h4 onclick="toggleDay('day1')">Day 1: Arrival in Shillong ▼</h4>
+                            <p id="day1" class="day-details" style="display: none;">
+                                Morning: Arrive at Guwahati Airport (nearest airport to Shillong).<br>
+                                <br>
+                                Afternoon: Transfer to Shillong (around 3-4 hours drive). En route, visit the beautiful
+                                Umiam Lake.<br>
+                                <br>
+                                Evening: Check into your hotel in Shillong.<br>
+                                <br>
+                                Night: Explore Police Bazaar, the main shopping area of Shillong.<br>
+                            </p>
+                        </div>
+
+                        <div class="day-item">
+                            <h4 onclick="toggleDay('day2')">Day 2: Shillong Local Sightseeing ▼</h4>
+                            <p id="day2" class="day-details" style="display: none;">
+                                Morning: Visit Ward's Lake and Lady Hydari Park.<br>
+                                <br>
+                                Afternoon: Explore Don Bosco Museum to learn about Northeast Indian culture.<br>
+                                <br>
+                                Evening: Visit Shillong Peak for panoramic views of the city.<br>
+                                <br>
+                                Night: Experience local music at Cafe Shillong or other music cafes.<br>
+                            </p>
+                        </div>
+
+                        <div class="day-item">
+                            <h4 onclick="toggleDay('day3')">Day 3: Cherrapunji Excursion ▼</h4>
+                            <p id="day3" class="day-details" style="display: none;">
+                                Morning: Drive to Cherrapunji (2 hours).<br>
+                                <br>
+                                Midday: Visit Seven Sisters Falls and Nohkalikai Falls.<br>
+                                <br>
+                                Afternoon: Explore Mawsmai Cave and Living Root Bridges.<br>
+                                <br>
+                                Evening: Return to Shillong.<br>
+                            </p>
+                        </div>
+
+                        <div class="day-item">
+                            <h4 onclick="toggleDay('day4')">Day 4: Mawlynnong & Dawki ▼</h4>
+                            <p id="day4" class="day-details" style="display: none;">
+                                Morning: Visit Mawlynnong, Asia's cleanest village.<br>
+                                <br>
+                                Afternoon: Experience the crystal-clear waters of Dawki River.<br>
+                                <br>
+                                Evening: Return to Shillong via the Bangladesh border view point.<br>
+                            </p>
+                        </div>
+
+                        <div class="day-item">
+                            <h4 onclick="toggleDay('day5')">Day 5: Local Culture & Shopping ▼</h4>
+                            <p id="day5" class="day-details" style="display: none;">
+                                Morning: Visit the local markets for traditional Khasi handicrafts.<br>
+                                <br>
+                                Afternoon: Visit Elephant Falls and Sweet Falls.<br>
+                                <br>
+                                Evening: Shopping at Bara Bazaar and local food exploration.<br>
+                            </p>
+                        </div>
+
+                        <div class="day-item">
+                            <h4 onclick="toggleDay('day6')">Day 6: Departure ▼</h4>
+                            <p id="day6" class="day-details" style="display: none;">
+                                Morning: Last-minute shopping at Police Bazaar.<br>
+                                <br>
+                                Afternoon: Transfer to Guwahati Airport for departure.<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="amenities">
+                    <h3>We offers you:</h3>
+                    <ul>
+                        <li><i class="fas fa-bed"></i> Comfortable Accommodation</li>
+                        <li><i class="fas fa-car"></i> Private Transportation</li>
+                        <li><i class="fas fa-mountain"></i> Scenic Viewpoints</li>
+                        <li><i class="fas fa-utensils"></i> Local Cuisine Experience</li>
+                        <li><i class="fas fa-music"></i> Cultural Shows</li>
+                        <li><i class="fas fa-shopping-bag"></i> Shopping Tours</li>
+                    </ul>
+                </div>
+
+                <div class="travel-tips">
+                    <h3>Essential Travel Tips for Shillong:</h3>
+                    <ul>
+                        <li style="display: flex; align-items: flex-start; gap: 10px;"><i class="fas fa-cloud"
+                                style="margin-top: 3px;"></i>
+                            <div><strong><em>Weather:</em></strong> Carry both light and warm clothes as weather can be
+                                unpredictable. Don't forget rain gear!</div>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; gap: 10px;"><i class="fas fa-shoe-prints"
+                                style="margin-top: 3px;"></i>
+                            <div><strong><em>Footwear:</em></strong> Comfortable walking shoes are essential for
+                                exploring the hilly terrain.</div>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; gap: 10px;"><i class="fas fa-camera"
+                                style="margin-top: 3px;"></i>
+                            <div><strong><em>Photography:</em></strong> Carry your camera for stunning landscapes and
+                                waterfalls.</div>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; gap: 10px;"><i class="fas fa-clock"
+                                style="margin-top: 3px;"></i>
+                            <div><strong><em>Best Time:</em></strong> October to May is the best time to visit Shillong.
+                            </div>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; gap: 10px;"><i class="fas fa-utensils"
+                                style="margin-top: 3px;"></i>
+                            <div><strong><em>Local Cuisine:</em></strong> Try Khasi dishes like Jadoh, Tungrymbai, and
+                                local black tea.</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-column">
+                <div class="booking-card">
+                    <div class="price">
+                        <span class="amount">₹18,999</span> / per person
+                    </div>
+                    <form class="booking-form">
+                        <div class="date-picker">
+                            <div class="check-in">
+                                <label for="check-in">Check-in</label>
+                                <input type="date" id="check-in" name="check-in">
+                            </div>
+                            <div class="check-out">
+                                <label for="check-out">Check-out</label>
+                                <input type="date" id="check-out" name="check-out">
+                            </div>
+                        </div>
+                        <button type="button" class="reserve-button" onclick="location.href='https://wa.me/919706218186'">Inquire</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>ApniGADEE</h4>
+                <p>
+                    Explore the world with ease and excitement through our
+                    comprehensive travel platform. Your journey begins here,
+                    where seamless planning meets unforgettable experiences.
+                </p>
+
+            </div>
+            <div class="footer-section">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Cabs</a></li>
+                    <li><a href="#">Destinations</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="#">9706218186/7099036358</a></li>
+                    <li><a href="#">apnigadeeofficial@gmail.com</a></li>
+                    <li><a href="#">Nikamul Chariali, Near Parua Bus Stand, Tezpur, Assam</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy;apnigadee. · Privacy · Terms · Sitemap</p>
+        </div>
+    </footer>
+    <script>
+        function toggleDay(dayId) {
+            const dayElement = document.getElementById(dayId);
+            const currentDisplay = dayElement.style.display;
+            dayElement.style.display = currentDisplay === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+
+</html>

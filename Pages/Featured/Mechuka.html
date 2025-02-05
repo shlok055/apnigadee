@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mechuka Travel Plan</title>
+    <link rel="stylesheet" href="../style/sheet.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+               <a href="../../index.html"><img src="../../assets/apni.png" alt="Airbnb Logo"></a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Start your search">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="user-menu">
+                <button class="globe"><i class="fas fa-globe"></i></button>
+                <button class="user-profile">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-user-circle"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="listing-header">
+            <h1>Mechuka Travel Plan</h1>
+            <div class="listing-meta">
+                <span class="rating"><i class="fas fa-star"></i> 4.6</span>
+                <span class="reviews">180 reviews</span>
+                <span class="location">Arunachal Pradesh, India</span>
+            </div>
+        </section>
+
+        <section class="photo-gallery">
+            <div class="main-photo">
+                <img src="https://en-media.thebetterindia.com/uploads/2016/11/ARUNACHAL-PRADESH.jpg?compress=true&quality=90" alt="Main Mechuka Photo">
+            </div>
+            <div class="photo-grid">
+                <img src="https://i0.wp.com/nenow.in/wp-content/uploads/2023/05/mechuka-arunachal-pradesh-v0-eokgtvle4ao91-scaled.jpg?w=2340&ssl=1" alt="Mechuka Photo 1">
+                <img src="https://th.bing.com/th/id/OIP.xrmCEpLAgYPbVtSKYmVWrwAAAA?w=474&h=355&rs=1&pid=ImgDetMain" alt="Mechuka Photo 2">
+                <img src="https://th.bing.com/th/id/OIP.mxi1FvLmyc2Vffa1arcDGAHaEK?w=960&h=540&rs=1&pid=ImgDetMain" alt="Mechuka Photo 3">
+                <img src="https://4.bp.blogspot.com/-EdPbBdNvTN4/XGwnifvo91I/AAAAAAAAEVI/TYiV00uM-Ik6fdG2oHjQerIZ6_RAoOmtQCLcBGAs/s1600/Mechuka.jpg" alt="Mechuka Photo 4">
+            </div>
+        </section>
+
+        <section class="listing-details">
+            <div class="left-column">
+                <div class="host-info">
+                    <h2>Mechuka Itinerary</h2>
+                    <div class="itinerary-days">
+                        <div class="day-item">
+                            <h4 onclick="toggleDay('day1')">Day 1: Dibrugarh/Tezpur to Along ▼</h4>
+                            <p id="day1" class="day-details" style="display: none;">
+                                Morning:
+                                Start early from Dibrugarh or Tezpur.<br>
+                                Journey to Along (Aalo) takes approximately 8-9 hours.<br>
+                                Enjoy scenic views of the Brahmaputra Valley.<br>
+                                <br>
+                                Afternoon:
+                                Arrive in Along and check into your hotel.<br>
+                                Rest and acclimatize to the altitude.<br>
+                                <br>
+                                Evening:
+                                Explore the local market in Along.<br>
+                                Try local Galo cuisine for dinner.
+                            </p>
+                        </div>
+
+                        <div class="day-item">
+                            <h4 onclick="toggleDay('day2')">Day 2: Along to Mechuka ▼</h4>
+                            <p id="day2" class="day-details" style="display: none;">
+                                Morning:
+                                Early breakfast and departure for Mechuka.<br>
+                                The journey takes 6-7 hours through stunning mountain landscapes.<br>
+                                Pass through beautiful valleys and traditional villages.<br>
+                                <br>
+                                Afternoon:
+                                Arrive in Mechuka and check into your accommodation.<br>
+                                Initial exploration of the valley.<br>
+                                <br>
+                                Evening:
+                                Watch the sunset over the snow-capped mountains.<br>
+                                Dinner with local delicacies.
+                            </p>
+                        </div>
+
+                        <div class="day-item">
+                            <h4 onclick="toggleDay('day3')">Day 3: Exploring Mechuka ▼</h4>
+                            <p id="day3" class="day-details" style="display: none;">
+                                Morning:
+                                Visit the 400-year-old Samten Yongcha Monastery.<br>
+                                Explore the ancient prayer wheels and Buddhist artifacts.<br>
+                                <br>
+                                Afternoon:
+                                Trek to nearby viewpoints for panoramic valley views.<br>
+                                Visit local Memba tribe villages.<br>
+                                <br>
+                                Evening:
+                                Bonfire and cultural interaction with locals.<br>
+                                Traditional dinner experience.
+                            </p>
+                        </div>
+
+                        <div class="day-item">
+                            <h4 onclick="toggleDay('day4')">Day 4: Mechuka Adventures ▼</h4>
+                            <p id="day4" class="day-details" style="display: none;">
+                                Morning:
+                                Trek to Dorjeeling Village.<br>
+                                Visit the Indo-China border viewing point.<br>
+                                <br>
+                                Afternoon:
+                                River-side picnic by the Yargyap Chu.<br>
+                                Photography session in the valley.<br>
+                                <br>
+                                Evening:
+                                Visit local handicraft centers.<br>
+                                Traditional music and dance experience.
+                            </p>
+                        </div>
+
+                        <div class="day-item">
+                            <h4 onclick="toggleDay('day5')">Day 5: Mechuka to Along ▼</h4>
+                            <p id="day5" class="day-details" style="display: none;">
+                                Morning:
+                                Last views of Mechuka Valley.<br>
+                                Start return journey to Along.<br>
+                                <br>
+                                Afternoon:
+                                Reach Along and rest.<br>
+                                Visit the Darka Village and rice fields.<br>
+                                <br>
+                                Evening:
+                                Local market shopping for souvenirs.<br>
+                                Farewell dinner.
+                            </p>
+                        </div>
+
+                        <div class="day-item">
+                            <h4 onclick="toggleDay('day6')">Day 6: Along to Dibrugarh/Tezpur ▼</h4>
+                            <p id="day6" class="day-details" style="display: none;">
+                                Morning:
+                                Early departure for return journey.<br>
+                                Photo stops at scenic points.<br>
+                                <br>
+                                Afternoon:
+                                Continue journey with comfort breaks.<br>
+                                <br>
+                                Evening:
+                                Arrive at Dibrugarh/Tezpur.<br>
+                                Tour conclusion.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="amenities">
+                    <h3>We offers you:</h3>
+                    <ul>
+                        <li><i class="fas fa-swimming-pool"></i> Accomodation</li>
+                        <li><i class="fas fa-wifi"></i> Transportaion</li>
+                        <li><i class="fas fa-tv"></i> Inner Line Permit</li>
+                        <li><i class="fas fa-snowflake"></i> Delicious Breakfast</li>
+                        <li><i class="fas fa-snowflake"></i> Beautiful Scenery</li>
+                        <li><i class="fas fa-tv"></i> Cultural Experience</li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="right-column">
+                <div class="booking-card">
+                    <div class="price">
+                        <span class="amount">₹18,999</span> / per person
+                    </div>
+                    <form class="booking-form">
+                        <div class="date-picker">
+                            <div class="check-in">
+                                <label for="check-in">Check-in</label>
+                                <input type="date" id="check-in" name="check-in">
+                            </div>
+                            <div class="check-out">
+                                <label for="check-out">Check-out</label>
+                                <input type="date" id="check-out" name="check-out">
+                            </div>
+                        </div>
+                        <button type="button" class="reserve-button" onclick="location.href='https://wa.me/919706218186'">Inquire</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>ApniGADEE</h4>
+                <p>
+                   Explore the world with ease and excitement through our
+                   comprehensive travel platform. Your journey begins here, 
+                   where seamless planning meets unforgettable experiences.
+                </p>
+
+            </div>
+            <div class="footer-section">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Cabs</a></li>
+                    <li><a href="#">Destinations</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="#">9706218186/7099036358</a></li>
+                    <li><a href="#">apnigadeeofficial@gmail.com</a></li>
+                    <li><a href="#">Nikamul Chariali, Near Parua Bus Stand, Tezpur, Assam</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy;apnigadee. · Privacy · Terms · Sitemap</p>
+        </div>
+    </footer>
+    <script>
+        function toggleDay(dayId) {
+            const dayElement = document.getElementById(dayId);
+            const currentDisplay = dayElement.style.display;
+            dayElement.style.display = currentDisplay === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+
+</html>

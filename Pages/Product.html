@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+  <link rel="stylesheet" href="../styles.css" />
+
+    <style>
+        .destination__card {
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        .destination__card img {
+            width: 100%;
+            height: 250px; /* Fixed height for all images */
+            object-fit: cover; /* This ensures images cover the area without distortion */
+            display: block; /* Removes any unwanted spacing */
+        }
+    </style>
+
+    <title>Product Catalog</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.querySelector('.search-input');
+            const destinationCards = document.querySelectorAll('.destination__card');
+
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase().trim();
+
+                destinationCards.forEach(card => {
+                    const destinationName = card.querySelector('h4').textContent.toLowerCase();
+                    if (destinationName.includes(searchTerm)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <nav>
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="../index.html" class="logo">ApniGadee</a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">TOUR</a></li>
+          <li><a href="#tour">SERVICES</a></li>
+          <li><a href="#package">ABOUT</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+          <li><a href="https://wa.me/919706218186">BOOK TRIP</a></li>
+        </ul>
+        <div class="nav__btns">
+          <a href="https://wa.me/919706218186">
+            <button class="btn">BOOK TRIP</button>
+          </a>
+        </div>
+      </nav>
+
+
+      
+      <section class="section__container destination__container" id="about">
+        <div class="search-container">
+          <div class="search-bar">
+            <input type="text" placeholder="Search destinations..." class="search-input">
+            <button class="search-button">
+              <i class="ri-search-line"></i>
+            </button>
+          </div>
+        </div>
+        <h2 class="section__header">Popular Destination</h2>
+        <p class="section__description">
+          Discover the Most Loved Destinations Around the Globe
+        </p>
+        <div class="destination__grid">
+          <div class="destination__card">
+           <a href="./Featured/Tawang.html"><img src="https://static.toiimg.com/photo/66331420/tawang-monastery.jpg?width=748&resize=4" alt="destination" /></a>
+            <div class="destination__card__details">
+              <div>
+                <h4>Tawang</h4>
+                <p>Northeast, India</p>
+              </div>
+              <div class="destination__rating">
+                <span><i class="ri-star-fill"></i></span>
+                4.7
+              </div>
+            </div>
+          </div>
+
+
+          <div class="destination__card">
+           <a href="./Featured/Anini.html"><img src="https://www.setmytrip.in/wp-content/uploads/2023/09/PSX_20231019_114235.jpg" alt="destination" /></a>
+            <div class="destination__card__details">
+              <div>
+                <h4>Anini</h4>
+                <p>Northeast, India</p>
+              </div>
+              <div class="destination__rating">
+                <span><i class="ri-star-fill"></i></span>
+                4.5
+              </div>
+            </div>
+          </div>
+
+
+          <div class="destination__card">
+            <a href="./Featured/Shillong.html"><img src="https://www.oyorooms.com/travel-guide/wp-content/uploads/2019/10/Shillong-Everlasting-Romance-for-all-Seasons-or-Best-Time-to-Visit-Shillong-3.jpg" alt="destination" /></a>
+            <div class="destination__card__details">
+              <div>
+                <h4>Shillong</h4>
+                <p>Meghalaya, India</p>
+              </div>
+              <div class="destination__rating">
+                <span><i class="ri-star-fill"></i></span>
+                4.8
+              </div>
+            </div>
+          </div>
+
+
+          <div class="destination__card">
+            <a href="./Featured/Shergaon.html"><img src="https://travellingslacker.com/wp-content/uploads/2020/12/A-Shergaon-2-01-1200x798.jpeg" alt="destination" /></a>
+            <div class="destination__card__details">
+              <div>
+                <h4>Shergaon</h4>
+                <p>Arunachal Pradesh, India</p>
+              </div>
+              <div class="destination__rating">
+                <span><i class="ri-star-fill"></i></span>
+                4.7
+              </div>
+            </div>
+          </div>
+
+
+          <div class="destination__card">
+            <a href="./Featured/Kaziranga.html"><img src="https://th.bing.com/th/id/OIP.vHvnJyeaWbCrmeZr3Z5vMQAAAA?rs=1&pid=ImgDetMain" alt="destination" /></a>
+            <div class="destination__card__details">
+              <div>
+                <h4>Kaziranga</h4>
+                <p>Assam, India</p>
+              </div>
+              <div class="destination__rating">
+                <span><i class="ri-star-fill"></i></span>
+                4.9
+              </div>
+            </div>
+          </div>
+
+
+          <div class="destination__card">
+            <a href="./Featured/Majuli.html"><img src="https://th-i.thgim.com/public/migration_catalog/article14916926.ece/alternates/LANDSCAPE_1200/HY13MAJULI" alt="destination" /></a>
+            <div class="destination__card__details">
+              <div>
+                <h4>Majuli</h4>
+                <p>Assam, India</p>
+              </div>
+              <div class="destination__rating">
+                <span><i class="ri-star-fill"></i></span>
+                4.8
+              </div>
+            </div>
+          </div>
+
+
+          <div class="destination__card">
+            <a href="./Featured/Mechuka.html"><img src="https://i0.wp.com/nenow.in/wp-content/uploads/2023/05/mechuka-arunachal-pradesh-v0-eokgtvle4ao91-scaled.jpg?w=2340&ssl=1" alt="destination" /></a>
+            <div class="destination__card__details">
+              <div>
+                <h4>Mechuka</h4>
+                <p>Arunachal Pradesh, India</p>
+              </div>
+              <div class="destination__rating">
+                <span><i class="ri-star-fill"></i></span>
+                4.4
+              </div>
+            </div>
+          </div>
+
+
+          <div class="destination__card">
+            <a href="./Featured/Sikkim.html"><img src="https://www.travelholicq.com/wp-content/uploads/2021/06/Mesmerizing-Places-To-Visit-In-Sikkim.jpg" alt="destination" /></a>
+            <div class="destination__card__details">
+              <div>
+                <h4>Sikkim</h4>
+                <p>Sikkim, India</p>
+              </div>
+              <div class="destination__rating">
+                <span><i class="ri-star-fill"></i></span>
+                4.8
+              </div>
+            </div>
+          </div>
+
+
+          <div class="destination__card">
+            <a href="./Featured/Umrangso.html"><img src="https://www.indinewz.com/wp-content/uploads/2020/05/Umrangso.png" alt="destination" /></a>
+            <div class="destination__card__details">
+              <div>
+                <h4>Umrangso</h4>
+                <p>Assam, India</p>
+              </div>
+              <div class="destination__rating">
+                <span><i class="ri-star-fill"></i></span>
+                4.8
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+</body>
+</html>

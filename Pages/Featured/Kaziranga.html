@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaziranga Travel Plan</title>
+    <link rel="stylesheet" href="../style/sheet.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="../../index.html"><img src="../../assets/apni.png" alt="Airbnb Logo"></a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Start your search">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="user-menu">
+                <button class="globe"><i class="fas fa-globe"></i></button>
+                <button class="user-profile">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-user-circle"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="listing-header">
+            <h1>Kaziranga Travel Plan</h1>
+            <div class="listing-meta">
+                <span class="rating"><i class="fas fa-star"></i> 4.7</span>
+                <span class="reviews">503 reviews</span>
+                <span class="location">Assam, India</span>
+            </div>
+        </section>
+
+        <section class="photo-gallery">
+            <div class="main-photo">
+                <img src="https://static.toiimg.com/photo/msid-96680450,width-96,height-65.cms" alt="Main Villa Photo">
+            </div>
+            <div class="photo-grid">
+                <img src="https://th.bing.com/th/id/OIP.2RdFua8aRCbCRuVQr1WYTgHaE8?w=625&h=417&rs=1&pid=ImgDetMain"
+                    alt="Villa Photo 1">
+                <img src="https://arunachaltourism.com/wp-content/uploads/2021/07/anini-mihu.jpg" alt="Villa Photo 2">
+                <img src="https://th.bing.com/th/id/OIP.K5kODTNpfo8GjVapU-ZfVgHaFm?rs=1&pid=ImgDetMain"
+                    alt="Villa Photo 3">
+                <img src="https://images.hindustantimes.com/img/2022/10/23/1600x900/kaziranga_assam_birds_1666522897493_1666522930513_1666522930513.PNG"
+                    alt="Villa Photo 4">
+            </div>
+        </section>
+
+        <section class="listing-details">
+            <div class="left-column">
+                <div class="host-info">
+                    <h2>Kaziranga Itinerary</h2>
+                    <div class="itinerary-days">
+
+
+                        <div class="day-item">
+                            <h4 onclick="toggleDay('day1')">Day 1: Arrival in Guwahati & Travel to Kaziranga ▼</h4>
+                            <p id="day1" class="day-details" style="display: none;">
+                                Morning: Arrive at Guwahati Airport (the nearest airport to Kaziranga).<br>
+                                <br>
+                                Afternoon: Transfer to Kaziranga National Park (around 5-6 hours drive).<br>
+                                <br>
+                                Evening: Check into your resort or lodge near the park.<br>
+                                <br>
+                                Relax & Leisure: You can relax at the resort after your long journey, enjoy a nice
+                                dinner, and take in the peaceful surroundings.<br>
+                            </p>
+                        </div>
+
+
+                        <div class="day-item">
+                            <h4 onclick="toggleDay('day2')">Day 2: Eastern Range - Jeep Safari & Elephant Ride ▼</h4>
+                            <p id="day2" class="day-details" style="display: none;">
+                                Early Morning:<br>
+
+                                Elephant Safari: Start with a memorable early morning elephant ride in the Eastern Range
+                                (Agoratoli) of Kaziranga, known for great wildlife sightings including rhinos, tigers,
+                                and various birds.<br>
+                                Enjoy the peaceful ambiance of the park at dawn as you ride through the grasslands and
+                                forests on the elephant's back.<br>
+                                <br>
+                                Breakfast: Return to the resort for breakfast.
+                                <br>
+                                Late Morning:
+
+                                After breakfast, head for a Jeep Safari in the Eastern Range, where you can spot
+                                wildlife like the Indian rhinoceros, wild buffalo, swamp deer, and various species of
+                                birds.<br>
+                                <br>
+                                Afternoon: Return to the resort, relax, and have lunch.<br>
+                                <br>
+                                Evening:<br>
+
+                                Evening Nature Walk: Take a guided nature walk around the resort, where you might spot
+                                some smaller wildlife and enjoy the peaceful environment.<br>
+                            </p>
+                        </div>
+
+
+                        <div class="day-item">
+                            <h4 onclick="toggleDay('day3')">Day 3: Central Range - Jeep Safari ▼</h4>
+                            <p id="day3" class="day-details" style="display: none;">
+                                Early Morning: Head out for a Jeep Safari in the Central Range (Kohora).<br> The area is
+                                known for sightings of the one-horned rhinoceros, tigers, elephants, and various bird
+                                species.<br>
+                                <br>
+                                Late Morning: Return to the resort for breakfast and some rest.<br>
+                                <br>
+
+                                Afternoon: After lunch, enjoy some relaxation time.<br> You may also visit the Kaziranga
+                                National Park Museum or local handicraft markets to learn more about the region's
+                                culture and history.<br>
+                                <br>
+                                Evening: Take a short walk in the vicinity of the park or relax by the resort's pool,
+                                enjoying the tranquility of the area.<br>
+                            </p>
+                        </div>
+
+
+                        <div class="day-item">
+                            <h4 onclick="toggleDay('day4')">Day 4: Western Range - Jeep Safari & Elephant Ride ▼</h4>
+                            <p id="day4" class="day-details" style="display: none;">
+                                Early Morning:<br>
+
+                                Elephant Safari: Start your day with an elephant ride in the Western Range of Kaziranga
+                                (Bagori). <br>This range is famous for sightings of tigers, rhinos, and elephants.<br>
+                                The elephant safari offers a unique opportunity to get up close to wildlife in the
+                                park.<br>
+                                <br>
+                                Late Morning: After the ride, enjoy breakfast at your resort.<br>
+                                <br>
+                                Midday: Head out for a Jeep Safari in the Western Range.<br> Spot tigers, wild boars,
+                                wild buffalo,
+                                elephants, and various species of deer.<br>
+                                <br>
+                                Afternoon: Lunch at the resort and some relaxation time.<br>
+                                <br>
+                                Evening: Visit nearby local villages or enjoy a cultural program or folk dance
+                                performance (depending on your resort's offerings).<br>
+                            </p>
+                        </div>
+
+                        <div class="day-item">
+                            <h4 onclick="toggleDay('day5')">Day 5: Visit to Kaziranga's Outskirts & Relaxation ▼</h4>
+                            <p id="day4" class="day-details" style="display: none;">
+                                Morning: After breakfast, take a short excursion to the Mishing village near Kaziranga
+                                for a cultural experience.<br> Learn about the lifestyle, traditions, and crafts of the
+                                local people.<br>
+                                <br>
+                                Midday: You can also visit the nearby Karbi Anglong Hills, enjoy some scenic views, or
+                                take part
+                                in birdwatching at nearby areas.<br>
+                                <br>
+                                Afternoon: Relax at the resort, enjoy the surrounding nature, or even take a dip in the
+                                pool.<br>
+                                <br>
+                                Evening:
+
+                                Enjoy a peaceful dinner at the resort, or indulge in a traditional Assamese meal to
+                                experience local flavors.<br>
+                            </p>
+                        </div>
+
+                        <div class="day-item">
+                            <h4 onclick="toggleDay('day6')">Day 6: Departure ▼</h4>
+                            <p id="day4" class="day-details" style="display: none;">
+                                Morning: Depending on your flight timing, enjoy a relaxed breakfast.<br>
+                                <br>
+                                Morning/Afternoon: Transfer back to Guwahati (5-6 hours drive). <br>If time permits, you can
+                                stop for a quick visit to Kamakhya Temple or other scenic spots along the way before
+                                heading to the airport for your onward journey.
+                            </p>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="amenities">
+                    <h3>We offers you:</h3>
+                    <ul>
+                        <li><i class="fas fa-swimming-pool"></i> Accomodation</li>
+                        <li><i class="fas fa-wifi"></i> Transportaion</li>
+                        <li><i class="fas fa-tv"></i> Exotic Flora & Fauna</li>
+                        <li><i class="fas fa-snowflake"></i> Delicious Breakfast</li>
+                        <li><i class="fas fa-snowflake"></i> Beautiful Scenery</li>
+                        <li><i class="fas fa-tv"></i> Cultural Experience</li>
+                    </ul>
+                </div>
+
+                <div class="travel-tips">
+                    <h3>Essential Travel Tips for Kaziranga:</h3>
+                    <ul>
+                        <li style="display: flex; align-items: flex-start; gap: 10px;"><i class="fas fa-clock" style="margin-top: 3px;"></i>    <div><strong><em>Safari Booking:</em></strong> Book the safaris in advance to avoid last-minute hassles, as spots can fill up quickly.</div></li>
+                        <li style="display: flex; align-items: flex-start; gap: 10px;"><i class="fas fa-tshirt" style="margin-top: 3px;"></i>   <div><strong><em>Clothing:</em></strong> Wear comfortable clothes suitable for safaris and outdoor activities. Neutral-colored clothing works best for safaris.</div></li>
+                        <li style="display: flex; align-items: flex-start; gap: 10px;"><i class="fas fa-camera" style="margin-top: 3px;"></i>   <div><strong><em>Camera & Binoculars:</em></strong> Don't forget to bring a camera and binoculars for better wildlife spotting.</div></li>
+                        <li style="display: flex; align-items: flex-start; gap: 10px;"><i class="fas fa-umbrella" style="margin-top: 3px;"></i> <div><strong><em>Weather:</em></strong> The best time to visit Kaziranga is from November to April, as the weather is pleasant for safaris.</div></li>
+                        <li style="display: flex; align-items: flex-start; gap: 10px;"><i class="fas fa-bug" style="margin-top: 3px;"></i>      <div><strong><em>Local Cuisine:</em></strong> Don't miss trying local Assamese dishes like fish curry, masor tenga (sour fish curry), and pithas (traditional sweets).</div></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-column">
+                <div class="booking-card">
+                    <div class="price">
+                        <span class="amount">₹21,999</span> / per person
+                    </div>
+                    <form class="booking-form">
+                        <div class="date-picker">
+                            <div class="check-in">
+                                <label for="check-in">Check-in</label>
+                                <input type="date" id="check-in" name="check-in">
+                            </div>
+                            <div class="check-out">
+                                <label for="check-out">Check-out</label>
+                                <input type="date" id="check-out" name="check-out">
+                            </div>
+                        </div>
+                        <button type="button" class="reserve-button" onclick="location.href='https://wa.me/919706218186'">Inquire</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>ApniGADEE</h4>
+                <p>
+                    Explore the world with ease and excitement through our
+                    comprehensive travel platform. Your journey begins here,
+                    where seamless planning meets unforgettable experiences.
+                </p>
+
+            </div>
+            <div class="footer-section">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Cabs</a></li>
+                    <li><a href="#">Destinations</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="#">9706218186/7099036358</a></li>
+                    <li><a href="#">apnigadeeofficial@gmail.com</a></li>
+                    <li><a href="#">Nikamul Chariali, Near Parua Bus Stand, Tezpur, Assam</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy;apnigadee. · Privacy · Terms · Sitemap</p>
+        </div>
+    </footer>
+    <script>
+        function toggleDay(dayId) {
+            const dayElement = document.getElementById(dayId);
+            const currentDisplay = dayElement.style.display;
+            dayElement.style.display = currentDisplay === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+
+</html>

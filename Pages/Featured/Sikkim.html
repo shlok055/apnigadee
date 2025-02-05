@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sikkim Travel Plan</title>
+    <link rel="stylesheet" href="../style/sheet.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="../../index.html"><img src="../../assets/apni.png" alt="Airbnb Logo"></a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Start your search">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="user-menu">
+                <button class="globe"><i class="fas fa-globe"></i></button>
+                <button class="user-profile">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-user-circle"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="listing-header">
+            <h1>Sikkim Travel Plan</h1>
+            <div class="listing-meta">
+                <span class="rating"><i class="fas fa-star"></i> 4.9</span>
+                <span class="reviews">512 reviews</span>
+                <span class="location">Sikkim, India</span>
+            </div>
+        </section>
+
+        <section class="photo-gallery">
+            <div class="main-photo">
+                <img src="https://www.wtravelmagazine.com/wp-content/uploads/2020/09/30.113.5-Beautiful-statue-of-Lord-Buddha-at-Ravangla-Sikkim-image-by-Rudra-Narayan-Mitra.jpg" alt="Sikkim Main Photo">
+            </div>
+            <div class="photo-grid">
+                <img src="https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2021/03/Lachung-Sikkim.jpg?resize=768%2C512&ssl=1" alt="Tsomgo Lake">
+                <img src="https://www.tripsavvy.com/thmb/ypa6kBcocUQL9pARaoIclmHa84s=/1885x1414/smart/filters:no_upscale()/GettyImages-606222988-5a823cff1d64040037dfd9a1.jpg" alt="Nathula Pass">
+                <img src="https://wallpaperaccess.com/full/4269063.jpg" alt="Gangtok">
+                <img src="https://beautyntechs.com/wp-content/uploads/2021/07/sikkim-tour.jpg" alt="Pelling">
+            </div>
+        </section>
+
+        <section class="listing-details">
+            <div class="left-column">
+                <div class="host-info">
+                    <h2>Sikkim Itinerary</h2>
+                    <div class="itinerary-days">
+                        <div class="day-item">
+                            <h4 onclick="toggleDay('day1')">Day 1: Arrival in Gangtok ▼</h4>
+                            <p id="day1" class="day-details" style="display: none;">
+                                Morning: Arrive at Bagdogra Airport (nearest airport to Sikkim).<br>
+                                <br>
+                                Afternoon: Transfer to Gangtok (around 4-5 hours drive). Enjoy scenic mountain views.<br>
+                                <br>
+                                Evening: Check into your hotel in Gangtok.<br>
+                                <br>
+                                Night: Explore MG Marg, the vibrant heart of Gangtok.<br>
+                            </p>
+                        </div>
+
+                        <div class="day-item">
+                            <h4 onclick="toggleDay('day2')">Day 2: Gangtok Local Sightseeing ▼</h4>
+                            <p id="day2" class="day-details" style="display: none;">
+                                Morning: Visit Rumtek Monastery and Do-Drul Chorten.<br>
+                                <br>
+                                Afternoon: Explore Namgyal Institute of Tibetology and Flower Exhibition Center.<br>
+                                <br>
+                                Evening: Visit Hanuman Tok for panoramic views.<br>
+                                <br>
+                                Night: Experience local cuisine at MG Marg.<br>
+                            </p>
+                        </div>
+
+                        <div class="day-item">
+                            <h4 onclick="toggleDay('day3')">Day 3: Tsomgo Lake & Nathula Pass ▼</h4>
+                            <p id="day3" class="day-details" style="display: none;">
+                                Morning: Drive to Tsomgo Lake (12,400 ft).<br>
+                                <br>
+                                Midday: Visit Nathula Pass (India-China border, permit required).<br>
+                                <br>
+                                Afternoon: Enjoy yak rides and snow activities.<br>
+                                <br>
+                                Evening: Return to Gangtok.<br>
+                            </p>
+                        </div>
+
+                        <div class="day-item">
+                            <h4 onclick="toggleDay('day4')">Day 4: Pelling & West Sikkim ▼</h4>
+                            <p id="day4" class="day-details" style="display: none;">
+                                Morning: Drive to Pelling, visit Pemayangtse Monastery.<br>
+                                <br>
+                                Afternoon: Explore Khechopalri Lake and Rabdentse Ruins.<br>
+                                <br>
+                                Evening: Watch sunset over Kanchenjunga from Pelling.<br>
+                            </p>
+                        </div>
+
+                        <div class="day-item">
+                            <h4 onclick="toggleDay('day5')">Day 5: North Sikkim ▼</h4>
+                            <p id="day5" class="day-details" style="display: none;">
+                                Morning: Visit Lachung and Yumthang Valley.<br>
+                                <br>
+                                Afternoon: Experience Zero Point (weather permitting).<br>
+                                <br>
+                                Evening: Return to Gangtok.<br>
+                            </p>
+                        </div>
+
+                        <div class="day-item">
+                            <h4 onclick="toggleDay('day6')">Day 6: Departure ▼</h4>
+                            <p id="day6" class="day-details" style="display: none;">
+                                Morning: Last-minute shopping at MG Marg.<br>
+                                <br>
+                                Afternoon: Transfer to Bagdogra Airport for departure.<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="amenities">
+                    <h3>We offers you:</h3>
+                    <ul>
+                        <li><i class="fas fa-bed"></i> Comfortable Accommodation</li>
+                        <li><i class="fas fa-car"></i> Private Transportation</li>
+                        <li><i class="fas fa-mountain"></i> Scenic Viewpoints</li>
+                        <li><i class="fas fa-utensils"></i> Local Cuisine Experience</li>
+                        <li><i class="fas fa-music"></i> Cultural Shows</li>
+                        <li><i class="fas fa-shopping-bag"></i> Shopping Tours</li>
+                    </ul>
+                </div>
+
+                <div class="travel-tips">
+                    <h3>Essential Travel Tips for Sikkim:</h3>
+                    <ul>
+                        <li style="display: flex; align-items: flex-start; gap: 10px;"><i class="fas fa-cloud" style="margin-top: 3px;"></i>
+                            <div><strong><em>Weather:</em></strong> Pack warm clothes as temperatures can be very cold. Layering is key!</div>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; gap: 10px;"><i class="fas fa-passport" style="margin-top: 3px;"></i>
+                            <div><strong><em>Permits:</em></strong> ILP (Inner Line Permit) required for certain areas. Arrange in advance.</div>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; gap: 10px;"><i class="fas fa-mountain" style="margin-top: 3px;"></i>
+                            <div><strong><em>Altitude:</em></strong> Acclimatize properly to avoid altitude sickness.</div>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; gap: 10px;"><i class="fas fa-clock" style="margin-top: 3px;"></i>
+                            <div><strong><em>Best Time:</em></strong> March to May and October to December are ideal.</div>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; gap: 10px;"><i class="fas fa-utensils" style="margin-top: 3px;"></i>
+                            <div><strong><em>Local Cuisine:</em></strong> Try momos, thukpa, and traditional Sikkimese dishes.</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-column">
+                <div class="booking-card">
+                    <div class="price">
+                        <span class="amount">₹24,999</span> / per person
+                    </div>
+                    <form class="booking-form">
+                        <div class="date-picker">
+                            <div class="check-in">
+                                <label for="check-in">Check-in</label>
+                                <input type="date" id="check-in" name="check-in">
+                            </div>
+                            <div class="check-out">
+                                <label for="check-out">Check-out</label>
+                                <input type="date" id="check-out" name="check-out">
+                            </div>
+                        </div>
+                        <button type="button" class="reserve-button" onclick="location.href='https://wa.me/919706218186'">Inquire</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>ApniGADEE</h4>
+                <p>
+                    Explore the world with ease and excitement through our
+                    comprehensive travel platform. Your journey begins here,
+                    where seamless planning meets unforgettable experiences.
+                </p>
+
+            </div>
+            <div class="footer-section">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Cabs</a></li>
+                    <li><a href="#">Destinations</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="#">9706218186/7099036358</a></li>
+                    <li><a href="#">apnigadeeofficial@gmail.com</a></li>
+                    <li><a href="#">Nikamul Chariali, Near Parua Bus Stand, Tezpur, Assam</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy;apnigadee. · Privacy · Terms · Sitemap</p>
+        </div>
+    </footer>
+    <script>
+        function toggleDay(dayId) {
+            const dayElement = document.getElementById(dayId);
+            const currentDisplay = dayElement.style.display;
+            dayElement.style.display = currentDisplay === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+
+</html>

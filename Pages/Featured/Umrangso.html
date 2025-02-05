@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umrangso Travel Plan</title>
+    <link rel="stylesheet" href="../style/sheet.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+               <a href="../../index.html"><img src="../../assets/apni.png" alt="Airbnb Logo"></a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Start your search">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="user-menu">
+                <button class="globe"><i class="fas fa-globe"></i></button>
+                <button class="user-profile">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-user-circle"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="listing-header">
+            <h1>Umrangso Travel Plan</h1>
+            <div class="listing-meta">
+                <span class="rating"><i class="fas fa-star"></i> 4.3</span>
+                <span class="reviews">156 reviews</span>
+                <span class="location">Dima Hasao, Assam</span>
+            </div>
+        </section>
+
+        <section class="photo-gallery">
+            <div class="main-photo">
+                <img src="https://www.indinewz.com/wp-content/uploads/2020/05/Umrangso.png" alt="Main Umrangso Photo">
+            </div>
+            <div class="photo-grid">
+                <img src="https://i.ytimg.com/vi/FdG2UvTDrF4/maxresdefault.jpg" alt="Umrangso Lake">
+                <img src="https://live.staticflickr.com/2528/3683797006_41aecff15f_b.jpg" alt="Umrangso Dam">
+                <img src="https://thumbs.dreamstime.com/b/golf-field-13916747.jpg" alt="Scenic View">
+                <img src="https://th.bing.com/th/id/R.f55535ec64649d635c46ee18215afd93?rik=vVWFrXjaN%2fWMGQ&riu=http%3a%2f%2fwww.hawaiigolf.com%2fphoto-galleries%2fimages%2fpreview%2f27846.jpg&ehk=ZVKtBWDI1%2fwX9T9tYWq%2fDfIAhJJ3UmYG6envAJW5lLo%3d&risl=&pid=ImgRaw&r=0" alt="Landscape">
+            </div>
+        </section>
+
+        <section class="listing-details">
+            <div class="left-column">
+                <div class="host-info">
+                    <h2>Umrangso Itinerary</h2>
+                    <div class="itinerary-days">
+                        <div class="day-item">
+                            <h4 onclick="toggleDay('day1')">Day 1: Arrival in Umrangso ▼</h4>
+                            <p id="day1" class="day-details" style="display: none;">
+                                Morning:<br>
+                                Depart from Guwahati/Tezpur early morning.<br>
+                                Journey through scenic hills of Dima Hasao (approximately 6-7 hours).<br>
+                                Enjoy beautiful landscapes and mountain views en route.<br>
+                                <br>
+                                Afternoon:<br>
+                                Arrive in Umrangso and check into your accommodation.<br>
+                                Rest and refresh after the journey.<br>
+                                <br>
+                                Evening:<br>
+                                Visit the Umrangso Lake viewpoint for sunset.<br>
+                                Dinner at local restaurant featuring Dimasa cuisine.
+                            </p>
+                        </div>
+
+                        <div class="day-item">
+                            <h4 onclick="toggleDay('day2')">Day 2: Exploring Umrangso ▼</h4>
+                            <p id="day2" class="day-details" style="display: none;">
+                                Morning:<br>
+                                Visit the NEEPCO Hydro Power Project.<br>
+                                Explore the Umrangso Dam area.<br>
+                                Boat ride in Umrangso Lake (subject to permissions).<br>
+                                <br>
+                                Afternoon:<br>
+                                Visit local hot springs known for therapeutic properties.<br>
+                                Explore nearby caves and limestone formations.<br>
+                                <br>
+                                Evening:<br>
+                                Cultural interaction with local Dimasa community.<br>
+                                Traditional dinner and relaxation.
+                            </p>
+                        </div>
+
+                        <div class="day-item">
+                            <h4 onclick="toggleDay('day3')">Day 3: Departure ▼</h4>
+                            <p id="day3" class="day-details" style="display: none;">
+                                Morning:<br>
+                                Early breakfast at hotel.<br>
+                                Last-minute shopping for local handicrafts.<br>
+                                Visit to local market if time permits.<br>
+                                <br>
+                                Afternoon:<br>
+                                Begin return journey to Guwahati/Tezpur.<br>
+                                Stop at scenic points for photography.<br>
+                                <br>
+                                Evening:<br>
+                                Arrive at destination by evening.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="amenities">
+                    <h3>We offers you:</h3>
+                    <ul>
+                        <li><i class="fas fa-bed"></i> Comfortable Accommodation</li>
+                        <li><i class="fas fa-car"></i> Transportation</li>
+                        <li><i class="fas fa-utensils"></i> Local Cuisine</li>
+                        <li><i class="fas fa-map-marked-alt"></i> Guided Tours</li>
+                        <li><i class="fas fa-camera"></i> Photography Spots</li>
+                        <li><i class="fas fa-users"></i> Cultural Experiences</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="booking-card">
+                    <div class="price">
+                        <span class="amount">₹7,999</span> / per person
+                    </div>
+                    <form class="booking-form">
+                        <div class="date-picker">
+                            <div class="check-in">
+                                <label for="check-in">Check-in</label>
+                                <input type="date" id="check-in" name="check-in">
+                            </div>
+                            <div class="check-out">
+                                <label for="check-out">Check-out</label>
+                                <input type="date" id="check-out" name="check-out">
+                            </div>
+                        </div>
+                        <button type="button" class="reserve-button" onclick="location.href='https://wa.me/919706218186'">Inquire</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>ApniGADEE</h4>
+                <p>
+                   Explore the world with ease and excitement through our
+                   comprehensive travel platform. Your journey begins here, 
+                   where seamless planning meets unforgettable experiences.
+                </p>
+
+            </div>
+            <div class="footer-section">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Cabs</a></li>
+                    <li><a href="#">Destinations</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="#">9706218186/7099036358</a></li>
+                    <li><a href="#">apnigadeeofficial@gmail.com</a></li>
+                    <li><a href="#">Nikamul Chariali, Near Parua Bus Stand, Tezpur, Assam</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy;apnigadee. · Privacy · Terms · Sitemap</p>
+        </div>
+    </footer>
+    <script>
+        function toggleDay(dayId) {
+            const dayElement = document.getElementById(dayId);
+            const currentDisplay = dayElement.style.display;
+            dayElement.style.display = currentDisplay === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+
+</html>
